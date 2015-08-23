@@ -1,0 +1,21 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="BB4834B0-BB38-4757-830F-A3F135837FB9/f:Form1.cs" caret="8196" fromTop="4" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:Utility/f:MathFunctions.cs" caret="0" fromTop="0" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:Utility/f:Algorithms.cs" caret="666" fromTop="12" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:GEP/d:Functions/f:FunctionFactory.cs" caret="1457" fromTop="17" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:DatabaseExtensions/f:CodonConverterExtensions.cs" caret="700" fromTop="17" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:Contracts/d:Environment/f:IEnvironment.cs" caret="1682" fromTop="52" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:GEP/d:Contracts/d:Environment/f:IGEPEnvironment.cs" caret="1298" fromTop="0" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:GEP/d:Functions/f:Arithmetic.cs" caret="831" fromTop="0" />
+    <File id="C7E65D0F-C002-4AD0-BB79-E397C59105C1/d:Presenters/d:AbstractPresenters/d:Universes/f:UniverseEditorPresenterBase.cs" caret="1294" fromTop="16" />
+    <File id="C7E65D0F-C002-4AD0-BB79-E397C59105C1/d:Models/d:Contracts/d:Universes/f:IUniverseEditorModel.cs" caret="269" fromTop="9" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:AbstractModels/d:Organisms/d:Genes/d:Alleles/f:AlleleBase.cs" caret="0" fromTop="0" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:AbstractModels/d:Organisms/d:GeneticCodes/d:DNAs/f:DNABase.cs" caret="2540" fromTop="67" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:AbstractModels/d:Organisms/d:Genes/f:GeneBase.cs" caret="0" fromTop="0" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:AbstractModels/d:Organisms/d:Genes/f:GenePhenotypeBase.cs" caret="0" fromTop="0" />
+    <File id="619EE58E-D2DE-487C-8318-B20A4CD00301/d:AbstractModels/d:Organisms/d:GeneticCodes/f:GeneticCodeBase.cs" caret="2342" fromTop="12" />
+    <File id="677B4ABD-74ED-445C-A17F-19C712FCC3C7/d:DatabaseDefinition/d:RowsColumnsAndTables/d:Enums/d:StrongEnums/d:GeneticFaradayDatabase/f:CodonConverterIdentifier.cs" caret="424" fromTop="12" />
+  </RecentFiles>
+  <RecentEdits />
+</RecentFiles>

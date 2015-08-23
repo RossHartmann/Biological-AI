@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="619EE58E-D2DE-487C-8318-B20A4CD00301" ModuleId="GeneticFaraday" />
+  <Module PersistentId="BB4834B0-BB38-4757-830F-A3F135837FB9" ModuleId="Earth" />
+  <Module PersistentId="C7E65D0F-C002-4AD0-BB79-E397C59105C1" ModuleId="GeneticFaradayApplication" />
+  <Module PersistentId="677B4ABD-74ED-445C-A17F-19C712FCC3C7" ModuleId="GeneticFaradayDatabaseLibrary" />
+</Modules>

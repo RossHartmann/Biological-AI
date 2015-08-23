@@ -1,0 +1,14 @@
+2013/05/24-06:42:44.447 fd0 Recovering log #257
+2013/05/24-06:42:44.463 fd0 Level-0 table #259: started
+2013/05/24-06:42:44.631 fd0 Level-0 table #259: 282025 bytes OK
+2013/05/24-06:42:44.707 fd0 Delete type=0 #257
+2013/05/24-06:42:44.725 fd0 Delete type=3 #255
+2013/05/24-06:42:44.730 30ac Compacting 4@0 + 1@1 files
+2013/05/24-06:42:44.940 30ac Generated table #261: 2167 keys, 270645 bytes
+2013/05/24-06:42:44.940 30ac Compacted 4@0 + 1@1 files => 270645 bytes
+2013/05/24-06:42:44.985 30ac Delete type=2 #248
+2013/05/24-06:42:44.996 30ac Delete type=2 #250
+2013/05/24-06:42:44.996 30ac Delete type=2 #253
+2013/05/24-06:42:44.997 30ac Delete type=2 #256
+2013/05/24-06:42:44.998 30ac Delete type=2 #259
+2013/05/24-06:42:44.998 30ac compacted to: files[ 0 1 0 0 0 0 0 ]

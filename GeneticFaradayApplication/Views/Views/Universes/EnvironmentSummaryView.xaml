@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="GeneticFaradayApplication.Views.Views.Universes.EnvironmentSummaryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="350" Width="650">
+    <Grid>
+        <ProgressBar HorizontalAlignment="Left" Height="18" Margin="10,322,0,0" VerticalAlignment="Top" Width="630"/>
+        <Button Content="Start" x:Name="start_button" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Stop" x:Name="stop_button" HorizontalAlignment="Left" Margin="565,295,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="current_generation_text_box" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="145" IsEnabled="False"/>
+        <Label Content="Current Generation" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.423" Margin="10,10,0,0">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="7" Opacity="0.9"/>
+            </Label.Effect>
+        </Label>
+        <Button Content="Edit" x:Name="edit_button" HorizontalAlignment="Left" Margin="565,41,0,0" VerticalAlignment="Top" Width="75" Click="edit_button_Click_1"/>
+
+    </Grid>
+</UserControl>

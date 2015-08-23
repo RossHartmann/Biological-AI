@@ -1,0 +1,28 @@
+﻿<Window x:Class="GeneticFaradayApplication.Views.Views.Environments.EnvironmentEditorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EnvironmentEditorView" Height="547" Width="1044">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Environment State" HorizontalAlignment="Left" Width="118" Margin="-2,-2,0,0" Height="20" VerticalAlignment="Top">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Genetic Operations" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="115" Margin="-2,-2,-56,0">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Metrics Evaluator" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="115" Margin="-2,-2,-56,0">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Organism Comparer" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="126" Margin="-2,-2,-67,0">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Callable Genes" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="101" Margin="-2,-2,0,0">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="End Criteria" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="101" Margin="-2,-2,0,0">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

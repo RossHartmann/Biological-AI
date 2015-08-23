@@ -1,0 +1,56 @@
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\obj\Debug\GeneticFaraday.csprojResolveAssemblyReference.cache
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\GeneticFaraday.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\GeneticFaraday.pdb
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\obj\Debug\GeneticFaraday.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\obj\Debug\GeneticFaraday.pdb
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\obj\Debug\GeneticFaraday.csprojResolveAssemblyReference.cache
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\obj\Debug\GeneticFaraday.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\obj\Debug\GeneticFaraday.pdb
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\UtilityData.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Utility.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\PowerCollections.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\EPPlus.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\UtilityData.pdb
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\UtilityData.xml
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Utility.pdb
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Utility.xml
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\PowerCollections.xml
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\EPPlus.xml
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\GeneticFaraday.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\GeneticFaraday.pdb
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Utility.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\PowerCollections.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\EPPlus.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\NHunspell.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\UtilityData.pdb
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\UtilityData.xml
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Utility.pdb
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Utility.xml
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\PowerCollections.xml
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\GeneticFaraday\bin\Debug\EPPlus.xml
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\GeneticFaradayDatabaseLibrary.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\GeneticFaradayDatabaseLibrary.pdb
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\NCalc.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Newtonsoft.Json.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Antlr3.Runtime.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\GeneticFaraday.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\GeneticFaraday.pdb
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\GeneticFaradayDatabaseLibrary.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\UtilityData.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Utility.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\PowerCollections.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Newtonsoft.Json.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\MySql.Data.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\NCalc.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\EPPlus.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Antlr3.Runtime.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\GeneticFaradayDatabaseLibrary.pdb
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\UtilityData.pdb
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\UtilityData.xml
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Utility.pdb
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\Utility.xml
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\PowerCollections.xml
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\bin\Debug\EPPlus.xml
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\obj\Debug\GeneticFaraday.csprojResolveAssemblyReference.cache
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\obj\Debug\GeneticFaraday.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaraday\obj\Debug\GeneticFaraday.pdb

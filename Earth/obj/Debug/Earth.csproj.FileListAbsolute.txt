@@ -1,0 +1,73 @@
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Earth.exe.config
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Earth.exe
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Earth.pdb
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.csprojResolveAssemblyReference.cache
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.Properties.Resources.resources
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.csproj.GenerateResource.Cache
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.exe
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.pdb
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\GeneticFaraday.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\GeneticFaraday.pdb
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\Earth.exe.config
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\obj\Debug\Earth.exe
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\obj\Debug\Earth.pdb
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\Earth.exe
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\Earth.pdb
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\GeneticFaraday.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\GeneticFaraday.pdb
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\obj\Debug\Earth.csprojResolveAssemblyReference.cache
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\obj\Debug\Earth.Properties.Resources.resources
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\obj\Debug\Earth.csproj.GenerateResource.Cache
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\UtilityData.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Utility.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\PowerCollections.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\MySql.Data.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\EPPlus.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\NHunspell.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\UtilityData.pdb
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\UtilityData.xml
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Utility.pdb
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Utility.xml
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\PowerCollections.xml
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\EPPlus.xml
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\UtilityData.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\Utility.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\PowerCollections.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\EPPlus.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\NHunspell.dll
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\UtilityData.pdb
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\UtilityData.xml
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\Utility.pdb
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\Utility.xml
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\PowerCollections.xml
+C:\Users\Ross Hartmann\Documents\Visual Studio 2012\Projects\GeneticFaraday\Earth\bin\Debug\EPPlus.xml
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.Form1.resources
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\GeneticFaradayDatabaseLibrary.dll
+D:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\GeneticFaradayDatabaseLibrary.pdb
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Earth.exe.config
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.exe
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.csprojResolveAssemblyReference.cache
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.Form1.resources
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.Properties.Resources.resources
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.csproj.GenerateResource.Cache
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Earth.exe
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Earth.pdb
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\GeneticFaraday.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\UtilityData.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\GeneticFaradayDatabaseLibrary.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Utility.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\PowerCollections.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Newtonsoft.Json.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\MySql.Data.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\NCalc.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\EPPlus.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Antlr3.Runtime.dll
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\GeneticFaraday.pdb
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\UtilityData.pdb
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\UtilityData.xml
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\GeneticFaradayDatabaseLibrary.pdb
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Utility.pdb
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\Utility.xml
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\PowerCollections.xml
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\bin\Debug\EPPlus.xml
+H:\documents\Visual Studios Projects\GeneticFaraday\Earth\obj\Debug\Earth.pdb

@@ -1,0 +1,116 @@
+﻿
+
+
+
+See “Pictures” for mutation ideas.
+
+
+
+We can set it up as a heiarchy. So one level writes to the Results and then those Results are the input of the next level.
+
+
+
+Each Function that is evolved (i.e. each Gene) has structural markers?
+That way, it can be compared to other genes.
+
+
+
+Hamming distance for measuring similarity
+
+when running Chromosomes in an IOrganism, just run them one at a time in the order that they appear in the IOrganism.
+
+
+
+
+add to registry:
+Take 1
+Skip 1
+
+Perform action on next n
+Skip n
+
+
+Copy from a to b
+copy next n
+
+paste
+paste at n
+paste starting at a
+
+
+Add other IEnumerable functions
+
+
+
+Perhaps the program should be able to set "markers"
+and then jump to the next "marker"
+
+That way, it can write "classes" of sorts
+
+
+NextNContains(x)
+
+For "WriteThen(a, b)" perhaps we don't evaluate the AminoAcid in "b" until "a" has been written (before, b would have been evaluated and thus executed before WriteThen() was called).
+ 
+We can also use this for DoWhile()
+ 
+IncrementRegistryAmount()
+ 
+ReadFromGlobalMoveForwardThenWriteToGlobal()
+ 
+ReadFromGlobalWriteToLocal()
+ 
+MoveForwardReadFromVariableWriteToGlobal()
+ 
+MoveFromPositionToPosition()
+   (We use this for the Variable Registry--think of sorting programs).
+MoveFromCurrentToNext()
+CopyCurrentToNext()
+etc.
+ 
+ 
+Overwrite
+
+
+
+
+
+Enable the printing of the organism's DNA (i.e. print its Genotype in 1 long strain).
+then we can have markers for where each gene starts and stops
+we can also have markers for where each chromosome starts and stops
+
+We should create a genome class
+we should be able to create an organism from a genome.
+Then we can very easily cross-over the chromosomes for two genomes. Or even the entire genome.
+when we convert to the chromosome
+
+Each "unit" in the Genome should be a Gene. The Genome will basically be a long sequence of genes. Each of the "Genes", however, has Alleles inside of it.
+
+We can also convert the genome to a phenome.
+the phenome can be our debuggable program?
+
+
+
+
+the reason there is a search for novelty in the world is because of scarcity of resources
+There are a limited set of resources in the world. When one group of organisms starts consuming most of a particular type of resource, new organisms must evolve that use a different type of resource (and are thus novel in their phenotype).
+
+
+
+Keep the elites from different generations and then randomly throw in an elite from the archive of elites? Or just store random elements into an archive and then randomly add them in later.
+
+We shouldn’t choose 2 elites that have the same phenotype. We should choose the top “x” “distinct” elites.
+
+
+
+
+
+
+
+
+
+
+test metrics evaluation
+
+
+

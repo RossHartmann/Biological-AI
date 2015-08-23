@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{619EE58E-D2DE-487C-8318-B20A4CD00301}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneticFaraday</RootNamespace>
+    <AssemblyName>GeneticFaraday</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UtilityData">
+      <HintPath>..\..\UtilityData\UtilityData\bin\Debug\UtilityData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractModels\Environment\EnvironmentStateBase.cs" />
+    <Compile Include="AbstractModels\Metrics\EndCriteriaEvaluatorBase.cs" />
+    <Compile Include="AbstractModels\Metrics\MetricsBase.cs" />
+    <Compile Include="AbstractModels\Metrics\MetricsEvaluatorBase.cs" />
+    <Compile Include="AbstractModels\Metrics\MetricsValueBase.cs" />
+    <Compile Include="AbstractModels\Organisms\Chromosomes\ChromosomeBase.cs" />
+    <Compile Include="AbstractModels\Organisms\Genes\Alleles\AlleleBase.cs" />
+    <Compile Include="AbstractModels\Organisms\Genes\GenePhenotypeBase.cs" />
+    <Compile Include="AbstractModels\Organisms\GeneticCodes\Codons\CodonConverters\CodonConverterBase.cs" />
+    <Compile Include="AbstractModels\Organisms\GeneticCodes\Codons\CodonConverters\CodonNumberConverterBase.cs" />
+    <Compile Include="AbstractModels\Organisms\GeneticCodes\Codons\CodonConverters\ConvertedCodonBase.cs" />
+    <Compile Include="AbstractModels\Organisms\GeneticCodes\DNAs\AminoAcids\AminoAcidBase.cs" />
+    <Compile Include="AbstractModels\Organisms\GeneticCodes\DNAs\DNABase.cs" />
+    <Compile Include="AbstractModels\Organisms\Genes\GeneBase.cs" />
+    <Compile Include="AbstractModels\Organisms\GeneticCodes\Codons\CodonBase.cs" />
+    <Compile Include="AbstractModels\Organisms\GeneticCodes\GeneticCodeBase.cs" />
+    <Compile Include="AbstractModels\Organisms\Genomes\GenomeBase.cs" />
+    <Compile Include="AbstractModels\Organisms\Genomes\GenomeUnitBase.cs" />
+    <Compile Include="AbstractModels\Organisms\OrganismBase.cs" />
+    <Compile Include="AbstractModels\Organisms\OrganismBehavior\Behaviors\BehaviorBase.cs" />
+    <Compile Include="AbstractModels\Organisms\OrganismBehavior\Behaviors\ChromosomeBehaviorBase.cs" />
+    <Compile Include="AbstractModels\Organisms\OrganismBehavior\Behaviors\GeneBehaviorBase.cs" />
+    <Compile Include="AbstractModels\Organisms\OrganismBehavior\Surroundings\ChromosomeSurroundingsBase.cs" />
+    <Compile Include="AbstractModels\Organisms\OrganismBehavior\Surroundings\GeneSurroundingsBase.cs" />
+    <Compile Include="AbstractModels\Organisms\OrganismBehavior\Surroundings\SurroundingsBase.cs" />
+    <Compile Include="AbstractModels\Organisms\Phenomes\PhenomeBase.cs" />
+    <Compile Include="Contracts\Environment\Events\EnvironmentStartEventArgs.cs" />
+    <Compile Include="Contracts\Organisms\IIdentifier.cs" />
+    <Compile Include="Contracts\Metrics\IMetricsValueCollection.cs" />
+    <Compile Include="Contracts\Metrics\IMetricsValueIdentifier.cs" />
+    <Compile Include="Contracts\Metrics\SimilarityComparers\ISimilarityComparer.cs" />
+    <Compile Include="Contracts\Metrics\SimilarityComparers\SimilarityComparerDelegates.cs" />
+    <Compile Include="Contracts\Organisms\Genes\Alleles\IAllele.cs" />
+    <Compile Include="Contracts\Organisms\Genes\Alleles\IAlleleCollection.cs" />
+    <Compile Include="Contracts\Organisms\Genes\IGenePhenotype.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\DNAs\IDNA.cs" />
+    <Compile Include="Contracts\Organisms\Genes\IGeneIdentifier.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\Nucleotides\INucleotide.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\Nucleotides\INucleotideCollection.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\Nucleotides\INucleotideIdentifier.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\DNAs\AminoAcids\IAminoAcid.cs" />
+    <Compile Include="Contracts\Organisms\Genomes\IGenome.cs" />
+    <Compile Include="Contracts\Organisms\Genomes\IGenomeUnit.cs" />
+    <Compile Include="Contracts\Organisms\OrganismBehavior\Behavior\IChromosomeBehavior.cs" />
+    <Compile Include="Contracts\Organisms\OrganismBehavior\Surroundings\IChromosomeSurroundings.cs" />
+    <Compile Include="Contracts\Organisms\OrganismBehavior\Behavior\IGeneBehavior.cs" />
+    <Compile Include="Contracts\Organisms\OrganismBehavior\Surroundings\IGeneSurroundings.cs" />
+    <Compile Include="Contracts\Organisms\Phenomes\IPhenome.cs" />
+    <Compile Include="DatabaseExtensions\CodonConverterExtensions.cs" />
+    <Compile Include="DatabaseExtensions\CodonExtensions.cs" />
+    <Compile Include="DatabaseExtensions\FunctionExtensions.cs" />
+    <Compile Include="DatabaseExtensions\NucleotideExtensions.cs" />
+    <Compile Include="DatabaseExtensions\RegistryExtensions.cs" />
+    <Compile Include="GEP\AbstractModels\Environment\GeneticOperators\InitializationOperators\GEPInitializationOperatorBase.cs" />
+    <Compile Include="GEP\AbstractModels\Environment\GeneticOperators\MutationOperators\GEPMutationOperatorBase.cs" />
+    <Compile Include="GEP\AbstractModels\Environment\GeneticOperators\RecombinationOperators\GEPRecombinationOperatorBase.cs" />
+    <Compile Include="GEP\AbstractModels\Environment\GeneticOperators\SelectionOperators\GEPSelectionOperatorBase.cs" />
+    <Compile Include="GEP\AbstractModels\Environment\GEPEnvironmentBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Chromosomes\GEPChromosomeBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Genes\Alleles\GEPAlleleBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Genes\GEPGeneBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Genes\GEPGenePhenotypeBase.cs" />
+    <Compile Include="GEP\AbstractModels\Environment\CallableGenesProviders\CallableGenesProviderBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\Codons\GEPCodonBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\DNAs\AminoAcids\AminoAcidResultBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\DNAs\AminoAcids\Arguments\ArgumentBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\DNAs\AminoAcids\Arguments\ArgumentUnevaluatedValueBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\DNAs\AminoAcids\Arguments\ArgumentValueBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\DNAs\AminoAcids\GEPAminoAcidBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\DNAs\GEPDNABase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\Functions\FunctionBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\Functions\FunctionExecutionDataBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\Functions\FunctionPairBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\Functions\Parameters\ParameterBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GeneticCodes\GEPGeneticCodeBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Genomes\GEPGenomeBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\GEPOrganismBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\OrganismBehavior\Behavior\GEPBehaviorBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\OrganismBehavior\Behavior\GEPChromosomeBehaviorBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\OrganismBehavior\Behavior\GEPGeneBehaviorBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\OrganismBehavior\GeneExecutionDataBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\OrganismBehavior\Surroundings\GEPChromosomeSurroundingsBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\OrganismBehavior\Surroundings\GEPGeneSurroundingsBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\OrganismBehavior\Surroundings\GEPSurroundingsBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Phenomes\DebuggablePhenomes\DebuggableAminoAcidBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Phenomes\DebuggablePhenomes\DebuggableAminoAcidCollectionBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Phenomes\DebuggablePhenomes\DebuggableChromosomeBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Phenomes\DebuggablePhenomes\DebuggableChromosomeCollectionBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Phenomes\DebuggablePhenomes\DebuggableGeneBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Phenomes\DebuggablePhenomes\VariableBase.cs" />
+    <Compile Include="GEP\AbstractModels\Organisms\Phenomes\GEPPhenomeBase.cs" />
+    <Compile Include="GEP\AbstractModels\Registries\RegistryBase.cs" />
+    <Compile Include="GEP\AbstractModels\Registries\RegistryCollectionBase.cs" />
+    <Compile Include="GEP\AbstractModels\Registries\RegistryIdentifierCollectionBase.cs" />
+    <Compile Include="GEP\AbstractModels\Universe\GEPUniverseBase.cs" />
+    <Compile Include="GEP\Contracts\Environment\GeneticOperators\InitializationOperators\IGEPInitializationOperator.cs" />
+    <Compile Include="GEP\Contracts\Environment\GeneticOperators\MutationOperators\IGEPMutationOperator.cs" />
+    <Compile Include="GEP\Contracts\Environment\GeneticOperators\RecombinationOperators\IGEPRecombinationOperator.cs" />
+    <Compile Include="GEP\Contracts\Environment\GeneticOperators\SelectionOperators\IGEPSelectionOperator.cs" />
+    <Compile Include="GEP\Contracts\Environment\IGEPEnvironment.cs" />
+    <Compile Include="GEP\Contracts\Environment\IGEPEnvironmentCollection.cs" />
+    <Compile Include="GEP\Contracts\Environment\IGEPPopulation.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Chromosomes\IGEPChromosome.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Chromosomes\IGEPChromosomeCollection.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Genes\Alleles\IGEPAllele.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Genes\Alleles\IGEPAlleleCollection.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Genes\IGEPGene.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Genes\IGEPGeneCollection.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\Codons\CodonConverters\ICodonConverter.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\Codons\CodonConverters\ICodonConverterIdentifier.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\Codons\CodonConverters\IConvertedCodon.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\Codons\CodonType.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\Codons\ICodon.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\Codons\ICodonIdentifier.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\Codons\CodonConverters\ICodonNumberConverter.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Genes\IGEPGenePhenotype.cs" />
+    <Compile Include="GEP\Contracts\Environment\CallableGenesProviders\ICallableGenesProvider.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\Codons\IGEPCodon.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\DNAs\IGEPDNA.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\Functions\FunctionDelegates.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\Functions\IFunctionExecutionData.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\Functions\Parameters\ParameterType.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\Functions\Parameters\IParameter.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\Functions\Parameters\IParameterCollection.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\Functions\IFunction.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\Functions\IFunctionPair.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\Functions\IFunctionIdentifier.cs" />
+    <Compile Include="Contracts\Organisms\GeneticCodes\IGeneticCode.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\IGEPGeneticCode.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\IGEPGeneticCodeUsingDatabase.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Genomes\IGEPGenome.cs" />
+    <Compile Include="GEP\Contracts\Organisms\IGEPOrganism.cs" />
+    <Compile Include="GEP\Contracts\Organisms\OrganismBehavior\Behavior\IGEPBehavior.cs" />
+    <Compile Include="GEP\Contracts\Organisms\OrganismBehavior\Behavior\IGEPChromosomeBehavior.cs" />
+    <Compile Include="GEP\Contracts\Organisms\OrganismBehavior\Surroundings\IGEPChromosomeSurroundings.cs" />
+    <Compile Include="GEP\Contracts\Organisms\OrganismBehavior\Behavior\IGEPGeneBehavior.cs" />
+    <Compile Include="GEP\Contracts\Organisms\OrganismBehavior\Surroundings\IGEPGeneSurroundings.cs" />
+    <Compile Include="GEP\Contracts\Organisms\OrganismBehavior\Surroundings\IGEPSurroundings.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\DNAs\AminoAcids\Arguments\IArgument.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\DNAs\AminoAcids\Arguments\IArgumentCollection.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\DNAs\AminoAcids\Arguments\IArgumentUnevaluatedValue.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\DNAs\AminoAcids\Arguments\IArgumentValue.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\DNAs\AminoAcids\IGEPAminoAcid.cs" />
+    <Compile Include="GEP\Contracts\Organisms\GeneticCodes\DNAs\AminoAcids\IAminoAcidResult.cs" />
+    <Compile Include="GEP\Contracts\Organisms\OrganismBehavior\IGeneExecutionData.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Phenomes\DebuggablePhenomes\IDebuggableAminoAcid.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Phenomes\DebuggablePhenomes\IDebuggableAminoAcidCollection.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Phenomes\DebuggablePhenomes\IDebuggableChromosome.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Phenomes\DebuggablePhenomes\IDebuggableChromosomeCollection.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Phenomes\DebuggablePhenomes\IDebuggableGene.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Phenomes\DebuggablePhenomes\IVariable.cs" />
+    <Compile Include="GEP\Contracts\Organisms\Phenomes\IGEPPhenome.cs" />
+    <Compile Include="GEP\Contracts\Registries\IRegistry.cs" />
+    <Compile Include="GEP\Contracts\Registries\IRegistryCollection.cs" />
+    <Compile Include="GEP\Contracts\Registries\IRegistryIdentifier.cs" />
+    <Compile Include="GEP\Contracts\Registries\IRegistryIdentifierCollection.cs" />
+    <Compile Include="GEP\Contracts\Registries\RegistryType.cs" />
+    <Compile Include="GEP\Contracts\Universe\IGEPUniverse.cs" />
+    <Compile Include="GEP\Functions\Arithmetic.cs" />
+    <Compile Include="GEP\Functions\Constants.cs" />
+    <Compile Include="GEP\Functions\IRegistryRead.cs" />
+    <Compile Include="GEP\Functions\IRegistryWrite.cs" />
+    <Compile Include="GEP\Models\Environment\GeneticOperators\InitializationOperators\GEPRandomOneGeneInitializationOperator.cs" />
+    <Compile Include="GEP\Models\Environment\GeneticOperators\MutationOperators\GEPMainGeneDecrementNucleotide.cs" />
+    <Compile Include="GEP\Models\Environment\GeneticOperators\MutationOperators\GEPMainGeneIncrementNucleotide.cs" />
+    <Compile Include="GEP\Models\Environment\GeneticOperators\MutationOperators\GEPMainGeneOneNucleotide.cs" />
+    <Compile Include="GEP\Models\Environment\GeneticOperators\MutationOperators\GEPMainGeneRandomizeNucleotides.cs" />
+    <Compile Include="GEP\Models\Environment\GEPEnvironment.cs" />
+    <Compile Include="GEP\Models\Exceptions\InvalidArgumentCount.cs" />
+    <Compile Include="GEP\Models\Organisms\Chromosomes\GEPChromosome.cs" />
+    <Compile Include="GEP\Models\Organisms\Genes\Alleles\GEPAllele.cs" />
+    <Compile Include="GEP\Models\Organisms\Genes\GEPGene.cs" />
+    <Compile Include="GEP\Models\Organisms\Genes\GEPGenePhenotype.cs" />
+    <Compile Include="GEP\Models\Environment\CallableGenesProviders\CallableGenesProviderAllChildren.cs" />
+    <Compile Include="GEP\Models\Environment\CallableGenesProviders\CallableGenesProviderFirstLevelChildren.cs" />
+    <Compile Include="GEP\Models\Environment\CallableGenesProviders\CallableGenesProviderNone.cs" />
+    <Compile Include="GEP\Models\Environment\CallableGenesProviders\CallableGenesProviderSourceAndAllChildren.cs" />
+    <Compile Include="GEP\Models\Environment\CallableGenesProviders\CallableGenesProviderSourceAndFirstLevelChildren.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\DNAs\AminoAcids\AminoAcidResult.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\DNAs\AminoAcids\Arguments\Argument.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\DNAs\AminoAcids\Arguments\ArgumentUnevaluatedValue.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\DNAs\AminoAcids\Arguments\ArgumentValue.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\DNAs\AminoAcids\GEPAminoAcid.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\DNAs\GEPDNA.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\Functions\FunctionExecutionData.cs" />
+    <Compile Include="GEP\Functions\FunctionFactory.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\Functions\Parameters\Parameter.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\GEPGeneticCodeUsingDatabase.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\GEPGeneticCodeUsingRAM.cs" />
+    <Compile Include="GEP\Models\Organisms\Genomes\GEPGenome.cs" />
+    <Compile Include="GEP\Models\Organisms\GEPOrganism.cs" />
+    <Compile Include="GEP\Models\Organisms\OrganismBehavior\Behavior\GEPBehavior.cs" />
+    <Compile Include="GEP\Models\Organisms\OrganismBehavior\Behavior\GEPChromosomeBehavior.cs" />
+    <Compile Include="GEP\Models\Organisms\OrganismBehavior\GeneExecutionData.cs" />
+    <Compile Include="GEP\Models\Organisms\OrganismBehavior\Surroundings\GEPChromosomeSurroundings.cs" />
+    <Compile Include="GEP\Models\Organisms\OrganismBehavior\Surroundings\GEPGeneSurroundings.cs" />
+    <Compile Include="GEP\Models\Organisms\OrganismBehavior\Surroundings\GEPSurroundings.cs" />
+    <Compile Include="GEP\Models\Organisms\Phenomes\DebuggablePhenomes\DebuggableAminoAcid.cs" />
+    <Compile Include="GEP\Models\Organisms\Phenomes\DebuggablePhenomes\DebuggableAminoAcidCollection.cs" />
+    <Compile Include="GEP\Models\Organisms\Phenomes\DebuggablePhenomes\DebuggableChromosome.cs" />
+    <Compile Include="GEP\Models\Organisms\Phenomes\DebuggablePhenomes\DebuggableGene.cs" />
+    <Compile Include="GEP\Models\Organisms\Phenomes\DebuggablePhenomes\Variable.cs" />
+    <Compile Include="GEP\Models\Organisms\Phenomes\GEPPhenome.cs" />
+    <Compile Include="GEP\Models\Registries\RegistryCollection.cs" />
+    <Compile Include="GEP\Models\Registries\RegistryIdentifierCollection.cs" />
+    <Compile Include="GEP\Models\Universe\GEPUniverse.cs" />
+    <Compile Include="Models\Environment\GeneticOperators\SelectionOperators\RouletteSelection.cs" />
+    <Compile Include="Models\Environment\GeneticOperators\SelectionOperators\TournamentSelection.cs" />
+    <Compile Include="Models\Exceptions\CodonConverterException.cs" />
+    <Compile Include="Models\Exceptions\GeneticCodeException.cs" />
+    <Compile Include="GEP\Models\Exceptions\RegistryException.cs" />
+    <Compile Include="Models\Metrics\Comparers\CompareByMetricValueLowerWins.cs" />
+    <Compile Include="Models\Metrics\Comparers\CompareByValueLowerWins.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Codons\CodonConverters\CodonConverterIdentifier.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Codons\CodonConverters\CodonNumberConverters\ConvertCodonToDecimal.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Codons\CodonConverters\CodonNumberConverters\ConvertCodonToFloat16.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Codons\CodonConverters\CodonNumberConverters\ConvertCodonToInt16.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Codons\CodonConverters\CodonNumberConverters\ConvertCodonToInt3.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Codons\CodonConverters\CodonNumberConverters\ConvertCodonToInt5.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Codons\CodonConverters\ConvertedCodon.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Codons\CodonIdentifier.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\Functions\FunctionIdentifier.cs" />
+    <Compile Include="GEP\Models\Organisms\OrganismBehavior\Behavior\GEPGeneBehavior.cs" />
+    <Compile Include="GEP\Models\Registries\RegistryIdentifier.cs" />
+    <Compile Include="Models\Metrics\Comparers\CompareByMetricValueHigherWins.cs" />
+    <Compile Include="Models\Metrics\EndCriteriaEvaluators\EndAfterMetricValueMetEvaluator.cs" />
+    <Compile Include="Models\Metrics\EndCriteriaEvaluators\EndAfterValueMetEvaluator.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Codons\GEPCodon.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\DNAs\DNA.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\Functions\Function.cs" />
+    <Compile Include="GEP\Models\Organisms\GeneticCodes\Functions\FunctionPair.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Nucleotides\NucleotideIdentifier.cs" />
+    <Compile Include="GEP\Models\Registries\Registry.cs" />
+    <Compile Include="Models\Environment\Environment.cs" />
+    <Compile Include="Models\Environment\EnvironmentIdentifiers\NameIdentifier.cs" />
+    <Compile Include="Models\Environment\EnvironmentState.cs" />
+    <Compile Include="Models\Exceptions\GeneticOperatorException.cs" />
+    <Compile Include="Models\Metrics\EndCriteriaEvaluators\EndAfterGenerationsEvaluator.cs" />
+    <Compile Include="Models\Metrics\EndCriteriaEvaluators\EndAfterElapsedTimeEvaluator.cs" />
+    <Compile Include="Models\Metrics\EndCriteriaEvaluators\EndNowEvaluator.cs" />
+    <Compile Include="Contracts\Environment\Events\EnvironmentEndEventArgs.cs" />
+    <Compile Include="Contracts\Environment\Events\EnvironmentInitializedEventArgs.cs" />
+    <Compile Include="Contracts\Environment\Events\GenerationEndEventArgs.cs" />
+    <Compile Include="Contracts\Environment\Events\GenerationStartEventArgs.cs" />
+    <Compile Include="Contracts\Environment\Events\PopulationInitializedEventArgs.cs" />
+    <Compile Include="Contracts\Environment\IEnvironmentIdentifier.cs" />
+    <Compile Include="Contracts\Environment\GeneticOperators\IGeneticOperator.cs" />
+    <Compile Include="Contracts\Environment\GeneticOperators\InitializationOperators\IInitializationOperator.cs" />
+    <Compile Include="Contracts\Environment\GeneticOperators\MutationOperators\IMutationOperator.cs" />
+    <Compile Include="Contracts\Environment\GeneticOperators\RecombinationOperators\IRecombinationOperator.cs" />
+    <Compile Include="Contracts\Environment\GeneticOperators\SelectionOperators\ISelectionOperator.cs" />
+    <Compile Include="Contracts\IShallowCopyable.cs" />
+    <Compile Include="Models\Metrics\Comparers\CompareByValueHigherWins.cs" />
+    <Compile Include="Contracts\Metrics\Events\EndMetricsEvaluationEventArgs.cs" />
+    <Compile Include="Contracts\Metrics\Events\StartMetricsEvaluationEventArgs.cs" />
+    <Compile Include="Contracts\Metrics\IEndCriteriaEvaluator.cs" />
+    <Compile Include="Contracts\Metrics\IMetricsEvaluator.cs" />
+    <Compile Include="Contracts\Metrics\IMetricsValue.cs" />
+    <Compile Include="Contracts\Organisms\OrganismBehavior\Behavior\IBehavior.cs" />
+    <Compile Include="Contracts\Organisms\Chromosomes\IChromosome.cs" />
+    <Compile Include="Contracts\Environment\IEnvironment.cs" />
+    <Compile Include="Contracts\Organisms\Chromosomes\IChromosomeCollection.cs" />
+    <Compile Include="Contracts\Organisms\Genes\IGeneCollection.cs" />
+    <Compile Include="Contracts\Organisms\OrganismBehavior\Surroundings\ISurroundings.cs" />
+    <Compile Include="Contracts\Universe\Events\AnyEnvironmentEndsEventArgs.cs" />
+    <Compile Include="Contracts\Universe\Events\UniverseStoppedEventArgs.cs" />
+    <Compile Include="Contracts\Universe\IEnvironmentCollection.cs" />
+    <Compile Include="Contracts\Environment\IEnvironmentState.cs" />
+    <Compile Include="Contracts\Organisms\Genes\IGene.cs" />
+    <Compile Include="Contracts\Organisms\IOrganism.cs" />
+    <Compile Include="Contracts\Metrics\IMetrics.cs" />
+    <Compile Include="Contracts\Environment\IPopulation.cs" />
+    <Compile Include="Contracts\Universe\IUniverse.cs" />
+    <Compile Include="AbstractModels\Environment\EnvironmentBase.cs" />
+    <Compile Include="AbstractModels\Environment\GeneticOperators\GeneticOperatorBase.cs" />
+    <Compile Include="AbstractModels\Environment\GeneticOperators\InitializationOperators\InitializationOperatorBase.cs" />
+    <Compile Include="AbstractModels\Environment\GeneticOperators\MutationOperators\MutationOperatorBase.cs" />
+    <Compile Include="AbstractModels\Environment\GeneticOperators\RecombinationOperators\RecombinationOperatorBase.cs" />
+    <Compile Include="AbstractModels\Environment\GeneticOperators\SelectionOperators\SelectionOperatorBase.cs" />
+    <Compile Include="AbstractModels\Universe\UniverseBase.cs" />
+    <Compile Include="Models\Environment\GeneticOperators\SelectionOperators\RandomSelection.cs" />
+    <Compile Include="Models\Metrics\Metrics.cs" />
+    <Compile Include="Models\Metrics\MetricsEvaluators\MetricsEvaluator.cs" />
+    <Compile Include="Models\Metrics\MetricsEvaluators\MetricsEvaluatorDelegates.cs" />
+    <Compile Include="Models\Metrics\MetricsValue.cs" />
+    <Compile Include="Models\Metrics\MetricsValueIdentifier.cs" />
+    <Compile Include="Models\Organisms\Genes\GeneIdentifier.cs" />
+    <Compile Include="Models\Organisms\GeneticCodes\Nucleotides\Nucleotide.cs" />
+    <Compile Include="Models\Organisms\Genomes\GenomeUnit.cs" />
+    <Compile Include="Models\Organisms\OrganismBehavior\Surroundings\Surroundings.cs" />
+    <Compile Include="Models\Universe\Universe.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\Algorithms.cs" />
+    <Compile Include="Utility\Extensions.cs" />
+    <Compile Include="Utility\MathFunctions.cs" />
+    <Compile Include="Utility\Randomizer.cs" />
+    <Compile Include="Utility\UniqueStringGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GEP\Models\Environment\GeneticOperators\RecombinationOperators\" />
+    <Folder Include="GEP\Models\Environment\GeneticOperators\SelectionOperators\" />
+    <Folder Include="Models\Environment\GeneticOperators\InitializationOperators\" />
+    <Folder Include="Models\Environment\GeneticOperators\MutationOperators\" />
+    <Folder Include="Models\Environment\GeneticOperators\RecombinationOperators\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

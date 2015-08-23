@@ -1,0 +1,1521 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Utility</name>
+    </assembly>
+    <members>
+        <member name="F:Utility.WinForms.TableViewer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Utility.WinForms.TableViewer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Utility.WinForms.TableViewer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Utility.User_Controls.StatusColorButton.#ctor">
+            <summary>
+            Defaults to Red
+            </summary>
+            <param name="color"></param>
+        </member>
+        <member name="F:Utility.User_Controls.StatusColorButton.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Utility.User_Controls.StatusColorButton.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Utility.User_Controls.StatusColorButton.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Utility.Extensions.Extender.First(System.String,System.Int32)">
+            <summary>
+            Returns the first n characters of a string (as a string).
+            If the string is less than the character count, the entire string will be returned.
+            </summary>
+            <param name="source"></param>
+            <param name="characterCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Extensions.Extender.ToIEnumerable``1(``0,System.Int32)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="count">The number of instance of Source that should be in
+            the IEnumerable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Extensions.Extender.FromIEnumerableToString(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Converts an IEnumerable of strings to 1 single string (the strings
+            are not separated)
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Extensions.Extender.GetAndMoveNext``1(System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Gets the current element in the enumerator
+            and then moves to the next element
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Extensions.Extender._getAndMoveNext``1(System.Collections.Generic.IEnumerator{``0})">
+            <summary>
+            Gets the current element in the enumerator in the form of an
+            IEnumerable
+            and them moves to the next element
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="enumerator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Extensions.Extender.Next``1(System.Collections.Generic.IEnumerator{``0},System.Int32)">
+            <summary>
+            Returns a specified number of contiguous elements
+            from the enumerator.
+            </summary>
+        </member>
+        <member name="M:Utility.Extensions.Extender.RemoveDuplicates``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Returns a new list with no duplicate elements.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Extensions.Extender.ToXMLFile(System.Data.DataTable,System.String)">
+            <summary>
+            Saves the DataTable to a specified file save path
+            </summary>
+            <param name="source"></param>
+            <param name="saveFileName"></param>
+        </member>
+        <member name="M:Utility.Extensions.Extender.AddColumnsToOtherTable(System.Data.DataTable,System.Data.DataTable@)">
+            <summary>
+            Adds the columns from teh source DataTable to the otherTable. (Does not
+            remove the columns from the source).
+            </summary>
+            <param name="source"></param>
+            <param name="otherTable"></param>
+        </member>
+        <member name="M:Utility.Extensions.Extender.GetRowData(System.Collections.Generic.IEnumerable{System.Data.DataTable})">
+            <summary>
+            For each table, gets its row data (as a List of objects)
+            and adds it to an IEnumerable. The 0th element of the returned IEnumerable corresponds
+            to the 0th given table.
+            </summary>
+            <param name="tables"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Extensions.Extender.ToDataTable(System.Data.DataSet,System.String)">
+            <summary>
+            Converts the DataTables within a DataSet to one single DataTable.
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Utility.Math.CheckSum">
+            <summary>
+            Implementation of the Adler32 checksum routine.
+            TODO: Derive from HashAlgorithm.
+            </summary>
+        </member>
+        <member name="F:Utility.Math.CheckSum.Base">
+            <summary>
+            Base for modulo arithmetic
+            </summary>
+        </member>
+        <member name="F:Utility.Math.CheckSum.NMax">
+            <summary>
+            Number of iterations we can safely do before applying the modulo.
+            </summary>
+        </member>
+        <member name="M:Utility.Math.CheckSum.ComputeChecksum(System.Int32,System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Computes the Adler32 checksum for the given data.
+            </summary>
+            <param name="initial">
+            Initial value or previous result. Use 1 for the
+            first transformation.
+            </param>
+            <param name="data">The data to compute the checksum of</param>
+            <param name="start">Index of first byte to compute checksum for</param>
+            <param name="length">Number of bytes to compute checksum for</param>
+            <returns>The checksum of the given data</returns>
+        </member>
+        <member name="M:Utility.Math.CheckSum.ComputeChecksum(System.Int32,System.Byte[])">
+            <summary>
+            Computes the Adler32 checksum for the given data.
+            </summary>
+            <param name="initial">
+            Initial value or previous result. Use 1 for the
+            first transformation.
+            </param>
+            <param name="data">The data to compute the checksum of</param>
+            <returns>The checksum of the given data</returns>
+        </member>
+        <member name="M:Utility.Math.CheckSum.ComputeChecksum(System.IO.Stream)">
+            <summary>
+            Computes the checksum for a stream, starting from the current
+            position and reading until no more can be read
+            </summary>
+            <param name="stream">The stream to compute the checksum for</param>
+            <returns>The checksum for the stream</returns>
+        </member>
+        <member name="M:Utility.Math.CheckSum.ComputeChecksum(System.String)">
+            <summary>
+            Computes the checksum of a file
+            </summary>
+            <param name="path">The file to compute the checksum of</param>
+            <returns>The checksum for the file</returns>
+        </member>
+        <member name="M:Utility.Collections.DictionaryWithIndexes`2.IndexOfKey(`0)">
+            <summary>
+            Gets the index of a key in the Dictionary.
+            </summary>
+            <param name="noteName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Collections.DictionaryWithIndexes`2.IndexOfValue(`1)">
+            <summary>
+             Gets the index of a value in the dictionary
+            </summary>
+            <param name="frequency"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Collections.DictionaryWithIndexes`2.KeyFromIndex(System.Int32)">
+            <summary>
+            Gets a key from an index in the dictionary
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Collections.DictionaryWithIndexes`2.ValueFromIndex(System.Int32)">
+            <summary>
+            Gets a value from an index in the dictionary
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Utility.Spreadsheets.Excel.ColumnFormatOptions">
+            <summary>
+            The options to format the cells within a column
+            in an Excel spreadsheet.
+            </summary>
+        </member>
+        <member name="P:Utility.Spreadsheets.Excel.ColumnFormatOptions.LeaveFALSEBlank">
+            <summary>
+            Only applicable of ColumnFormat is Bool.
+            
+            If true, any FALSE values will be left blank on the
+            spreadsheet.
+            </summary>
+        </member>
+        <member name="P:Utility.Spreadsheets.Excel.ColumnFormatOptions.StandardDate">
+            <summary>
+            Creates a ColumnFormatOptions as ShortDate
+            </summary>
+        </member>
+        <member name="P:Utility.Spreadsheets.Excel.ColumnFormatOptions.BoolWithBlanks">
+            <summary>
+            Converts all true to Yes and false to No.
+            
+            Leaves FALSEs blank (leaves "No"'s blank).
+            </summary>
+        </member>
+        <member name="P:Utility.Spreadsheets.Excel.ColumnFormatOptions.BoolWithNoBlanks">
+            <summary>
+            Converts all true to Yes and false to No.
+            </summary>
+        </member>
+        <member name="M:Utility.Images.FixedSize(System.Drawing.Image,System.Int32,System.Int32)">
+            <summary>
+            code borrowed from http://www.codeproject.com/csharp/imageresize.asp
+            </summary>
+            <param name="imgPhoto"></param>
+            <param name="Width"></param>
+            <param name="Height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Images.ResizeImageFromHeight(System.Drawing.Image,System.Int32)">
+            <summary>
+            Determines the width based on the proportion of the new height
+            </summary>
+            <param name="image"></param>
+            <param name="newHeight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Images.ResizeImageFromWidth(System.Drawing.Image,System.Int32)">
+            <summary>
+            Determines the height based on the proportion of the new width
+            </summary>
+            <param name="image"></param>
+            <param name="newWidth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Images.ResizeImage(System.Drawing.Image,System.Int32,System.Int32)">
+            <summary>
+            taken from http://snippets.dzone.com/posts/show/4336
+            </summary>
+            <param name="FullsizeImage"></param>
+            <param name="NewWidth"></param>
+            <param name="MaxHeight"></param>
+            <param name="OnlyResizeIfWider"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Utility.Exceptions.GeneralExceptions.ValueNotYetSupported">
+            <summary>
+            Used for the final else statement when checking
+            all the cases of an Enum
+            </summary>
+        </member>
+        <member name="F:Utility.Spreadsheets.Excel.ExcelDateFormat.DateWithPeriods">
+            <summary>
+            "YYYY.MM.DD"
+            </summary>
+        </member>
+        <member name="F:Utility.Spreadsheets.Excel.ExcelDateFormat.ShortDate">
+            <summary>
+            "MM/DD/YYYY"
+            </summary>
+        </member>
+        <member name="F:Utility.Spreadsheets.Excel.ExcelDateFormat.LongDate">
+            <summary>
+            12/30/2011 9:47
+            </summary>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.Excel.ParseSheetFromExcelFile(System.String)">
+            <summary>
+            Gets the first sheet of an Excel file.
+            Works on Excel 2007 and 2010.
+            
+            Truncates cells with data longer than 255 characters.
+            See http://stackoverflow.com/questions/1519288/jet-engine-255-character-truncation
+            To fix that, convert from Excel to CSV then read the file.
+            
+            
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.Excel.ParseSheetFromExcelFile(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Works on Excel 2007 and 2010.
+            
+            See http://www.gidforums.com/t-17370.html
+            
+            See http://www.connectionstrings.com/excel-2007 for different connection options
+            
+            Truncates cells with data longer than 255 characters.
+            See http://stackoverflow.com/questions/1519288/jet-engine-255-character-truncation
+            To fix that, convert from Excel to CSV then read the file.
+            </summary>
+            <returns></returns>
+            <param name="sheetNumber">Use 1 to select the 1st sheet. 2 to select the second.</param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.Excel.IsSpreadsheetDateTimeEmpty(System.Object,System.DateTime@)">
+            <summary>
+            Determines if a value is an empty DateTime value
+            </summary>
+            <param name="spreadsheetCellValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.Excel.FormatCellRangeAsDate(System.Data.DataTable,OfficeOpenXml.ExcelWorksheet@,System.String,Utility.Spreadsheets.Excel.ExcelDateFormat)">
+            <summary>
+            If the DateTime is an empty DateTime then it will show as blank on the spreadsheet.
+            
+            Excludes any Time that is included in the DateTimes.
+            
+            Example format values:
+            "YYYY.MM.DD"
+            "MM/DD/YYYY"
+            </summary>
+            <param name="dataTable"></param>
+            <param name="worksheet"></param>
+            <param name="columnName"></param>
+            <param name="format"></param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.Excel.CreateExcelFile(System.String,OfficeOpenXml.ExcelWorksheet@)">
+            <summary>
+            Given a path (with a filename), creates an Excel Package.
+            (Overwrites the file if it already exists).
+            
+            The function then creates a Worksheet and ties it to that Excel Package.
+            Sets the worksheet to show gridlines. (worksheet.View.ShowGridLines).
+            </summary>
+            <param name="pathWithFileName"></param>
+            <param name="worksheet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.Excel.CreateExcelFile(System.String,System.String,OfficeOpenXml.ExcelWorksheet@)">
+            <summary>
+            Given a path (with a filename), creates an Excel Package.
+            (Overwrites the file if it already exists).
+            
+            The function then creates a Worksheet and ties it to that Excel Package.
+            Sets the worksheet to show gridlines. (worksheet.View.ShowGridLines).
+            </summary>
+            <param name="pathWithFileName"></param>
+            <param name="worksheetName">The name of the worksheet (the tab name in the excel file)</param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.Excel.SaveExcelFile(System.Data.DataTable,System.String,System.Collections.Generic.List{System.Data.DataTable},System.Collections.Generic.List{System.String},System.Boolean,System.String)">
+            <summary>
+            Creates and saves an excel file with 2 tabs from the given DataTables
+            </summary>
+            <param name="firstWorksheetData"></param>
+            <param name="secondWorksheetData"></param>
+            <param name="includeHeaders"></param>
+            <param name="savePath"></param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.Excel.SaveExcelFile(System.Data.DataTable,System.Boolean,System.String)">
+            <summary>
+            Creates and saves an excel file from a dataTable to the given savePath
+            </summary>
+            <param name="dataTable"></param>
+            <param name="includeHeaders"></param>
+            <param name="saveExcelPath"></param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.Excel.CreateAndSaveExcelFile(System.Data.DataTable,System.Boolean)">
+            <summary>
+            Creates a spreadsheet from a DataTable.
+            Asks the user where to save the spreadsheet.
+            Only saves the spreadsheet if the user wants to save it (opens a SaveFileDialog)
+            
+            Returns false on failure to save when user wanted to
+            </summary>
+            <param name="dataTable"></param>
+        </member>
+        <member name="T:Utility.WCF.ServiceMaster`2">
+            <summary>
+            Used to configure a WCF Service
+            </summary>
+        </member>
+        <member name="M:Utility.WCF.ServiceMaster`2.ResetServiceHost(System.ServiceModel.WSHttpBinding)">
+            <summary>
+            Sets the Service Host and opens an EndPoint to this.Uri with wsHttpBinding
+            </summary>
+        </member>
+        <member name="M:Utility.Time.TimeSpan(System.DateTime)">
+            <summary>
+            Returns the time span from the specified time to the Now time
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Utility.Percentage">
+            <summary>
+            A Percentage value that must be between 0 and 1
+            </summary>
+        </member>
+        <member name="T:Utility.Location">
+            <summary>
+            Represents a location in a 2 dimensional collection.
+            
+            X is the position in the first dimension of the collection.
+            Y is the position in the second dimension of the collection.
+            </summary>
+        </member>
+        <member name="F:Utility.Location._x">
+            <summary>
+            X is the position in the first dimension of the collection.
+            </summary>
+        </member>
+        <member name="F:Utility.Location._y">
+            <summary>
+            Y is the position in the second dimension of the collection.
+            </summary>
+        </member>
+        <member name="M:Utility.Binary.ConvertToBits(System.Byte)">
+            <summary>
+            Little endian
+            </summary>
+            <param name="byteToConvert"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Binary.ConvertToBinary(System.Byte[],System.Boolean)">
+            <summary>
+            Little endian
+            </summary>
+            <param name="bytes"></param>
+            <param name="includeSpacesBetweenBytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.XML.PopulateType``1(System.String)">
+            <summary>
+            Populates an instance of the specified type
+            from the elements of a given XML File.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="xmlFilePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.XML.ToDataSet(System.String,System.String)">
+            <summary>
+            Converts an .XML File to a DataSet
+            
+            The DataSet can and probably will have multiple tables.
+            </summary>
+            <param name="xmlFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.XML.ToXMLFile(System.Data.DataTable,System.String)">
+            <summary>
+            Writes the specified DataTable to the specified save file path
+            </summary>
+            <param name="dataTable"></param>
+            <param name="saveFileName"></param>
+        </member>
+        <member name="M:Utility.XML.ToXMLFile(System.String,System.String[],System.Object[],System.String)">
+            <summary>
+            Creates a dataTable with 1 row with the specified columns and values.
+            Then converts that dataTable into an XML file which is then saved
+            using the specified saveFileName.
+            
+            This is ideal for config files.
+            </summary>
+            <param name="columnNames"></param>
+            <param name="values"></param>
+            <param name="saveFileName"></param>
+        </member>
+        <member name="M:Utility.XML.ToXMLFile(System.String,System.String)">
+            <summary>
+            Saves the specified excel file to the specified save path as an XML File
+            </summary>
+            <param name="excelFilePath">should contain file extension</param>
+            <param name="savePath">should contain file extension</param>
+        </member>
+        <member name="M:Utility.XML.ToExcelFile(System.String,System.String)">
+            <summary>
+            Saves the specified xml file to the specified save path as an Excel File.
+            </summary>
+            <param name="xmlFilePath">should contain file extension</param>
+            <param name="savePath">should contain file extension</param>
+        </member>
+        <member name="M:Utility.XML.ToXMLFile(System.Object,System.String,System.Text.Encoding)">
+            <summary>
+            Serializes the specified objects of the specified type to an XML file
+            at the specified file path.
+            </summary>
+            <param name="toSerialize"></param>
+            <param name="typeOfObjectToSerialize"></param>
+            <param name="xmlFilePath"></param>
+        </member>
+        <member name="F:Utility.WinForms.WinForms.MaxRGB">
+            <summary>
+            The maximum number of units of RGB (255 reds, 255 greens, 255 blues)
+            </summary>
+        </member>
+        <member name="F:Utility.WinForms.WinForms.RedIncrement">
+            <summary>
+            The number of units of RGB that make up 1 red unit. (255*255. 255 green units.)
+            </summary>
+        </member>
+        <member name="F:Utility.WinForms.WinForms.GreenIncrement">
+            <summary>
+            The number of units of RGB that make up 1 green unit. (255. 255 blue units.)
+            </summary>
+        </member>
+        <member name="F:Utility.WinForms.WinForms.BlueIncrement">
+            <summary>
+            The number of units of RGB that make up 1 blue unit. (1. 1 blue unit.)
+            </summary>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.DimComponent(System.Drawing.Color,Utility.WinForms.WinForms.RGB)">
+            <summary>
+            Dims the specified component of a color
+            </summary>
+            <param name="color"></param>
+            <param name="component"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.DimR(System.Drawing.Color)">
+            <summary>
+            Dims the red component of a color, thereby bringing out its other components.
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.DimG(System.Drawing.Color)">
+            <summary>
+            Dims the Green component of a color, thereby bringing out its other components.
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.DimB(System.Drawing.Color)">
+            <summary>
+            Dims the Blue component of a color, thereby bringing out its other components.
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.GetRandomOtherComponent(Utility.WinForms.WinForms.RGB)">
+            <summary>
+            Given a compoent R, G, or B, gets one of the other components randomly.
+            </summary>
+            <param name="chosen"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.DimLowestComponent(System.Drawing.Color,Utility.WinForms.WinForms.RGB@)">
+            <summary>
+            Dims the lowest R, G, or B component of a color. Also "outs" a parameter "lowestComponent" which tells you which
+            component was the lowest.
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.BrightenColors(System.Drawing.Color[])">
+            <summary>
+            Brightens an array of colors by dimming certain components and thereby highlighting others. Defaults to modifying 2 components 20% of the time. 80%
+            chance of modifying 1 component.
+            </summary>
+            <param name="colors"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.BrightenColors(System.Drawing.Color[],System.Double)">
+            <summary>
+            Brightens an array of colors by dimming certain components and thereby highlighting others.
+            </summary>
+            <param name="colors"></param>
+            <param name="chanceToModifyTwoComponents">If .5 then there is a 50 percent chance. If .20, then a 20 percent chance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.GetColorSeries(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns an array of colors, spanning the range of possible colors using
+            a pre-determined increment
+            </summary>
+            <param name="numColors"></param>
+            <param name="RGBIncrement"></param>
+            <param name="alpha"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.GetColorSeriesInRange(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Given a starting and ending RGB and a number of colors, gets a color series.
+            </summary>
+            <param name="numColors"></param>
+            <param name="startingRGB"></param>
+            <param name="endingRGB"></param>
+            <param name="alpha"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.GetColorSeries(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns an array of colors, spanning the range of possible colors using
+            a pre-determined increment and a startingRGB.
+            </summary>
+            <param name="numColors"></param>
+            <param name="startingRGB"></param>
+            <param name="RGBIncrement"></param>
+            <param name="alpha"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.GetColorSeries(System.Int32,System.Int32)">
+            <summary>
+            Returns an array of colors, spanning the range of possible colors using
+            a uniform and evenly-split increment.
+            </summary>
+            <param name="numColors"></param>
+            <param name="alpha"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.DetermineColorRGBIncrement(System.Int32)">
+            <summary>
+            Assuming we want to create a number of distinct colors, returns the RGB unit increment that we'll have to use for GetColor to get the next
+            Color in the series that we want.
+            </summary>
+            <param name="numColors"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.ConvertRGBUnitsToColor(System.Int32)">
+            <summary>
+            Given a single number of RGBUnits, converts it to a color.
+            </summary>
+            <param name="RGBUnits"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.AddColors(System.Drawing.Color,System.Drawing.Color,System.Int32,System.Boolean)">
+            <summary>
+            Adds the RGB of two colors.
+            </summary>
+            <param name="colorOne"></param>
+            <param name="colorTwo"></param>
+            <param name="truncateOverflow">If true, any red value over 255 will default to 255. If false, an error is thrown if red is over 255.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.GetColor(System.Drawing.Color,System.Drawing.Color,System.Int32)">
+            <summary>
+            Given a starting number of RGB units and given an RGB unit increment value and an alpha, determines the next color in the series.
+            </summary>
+            <param name="startingRGBColor">The RGB Color that we're starting at to calculate the next Color an RGBIncrement away.</param>
+            <param name="RGBIncrementColor">A Color indicating how far a new Color will be from the startingRGB Color (determined using its RGB values)</param>
+            <param name="alpha">Transparency. 255 is opaque.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.GetColor(System.Drawing.Color,System.Int32,System.Int32)">
+            <summary>
+            Given a starting number of RGB units and given an RGB unit increment value and an alpha, determines the next color in the series.
+            </summary>
+            <param name="startingRGBColor">The RGB Color that we're starting at to calculate the next Color an RGBIncrement away.</param>
+            <param name="RGBIncrement">A number indicating how many RGB Units this new Color will be from the startingRGB Color</param>
+            <param name="alpha">Transparency. 255 is opaque.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.GetAbsoluteLocation(System.Windows.Forms.Control)">
+            <summary>
+            Given a control, gets the control's absolute location on the screen (not relative to parent. Gets its actual location on the screen).
+            In pixels.
+            </summary>
+            <param name="control"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.GetIndexOfStringAtLength(System.Drawing.Graphics,System.Drawing.Font,System.Int32,System.String,System.Single)">
+            <summary>
+            Given a string, returns the index of the string that is just before the length of the string would reach maxLengthOfString
+            </summary>
+            <param name="g"></param>
+            <param name="stringFont"></param>
+            <param name="startingIndex"></param>
+            <param name="str"></param>
+            <param name="maxLengthOfString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.OpenFileDialog(System.String[],System.String[],System.Windows.Forms.OpenFileDialog@)">
+            <summary>
+            Opens an OpenFileDialog and returns DialogResult
+            </summary>
+            <param name="allowableFileName">The file type name as it will appear in the filter. (E.g. "Excel File").</param>
+            <param name="allowableFileType">The file type (e.g. ".xlsx")</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.WinForms.WinForms.SaveFileDialog(System.String[],System.String[],System.Windows.Forms.SaveFileDialog@)">
+            <summary>
+            Opens a SaveFileDialog and returns DialogResult
+            </summary>
+            <param name="allowableFileName">The file type name as it will appear in the filter. (E.g. "Excel File").</param>
+            <param name="allowableFileType">The file type (e.g. ".xlsx")</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Parser.ParseDateTimeFromTimeString(System.String)">
+            <summary>
+            Given a time string, returns a DateTime containing the appropriate
+            time of January 1st of the 1st year.
+            
+            Assumes that the time string contains a ":" separator.
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Utility.Files.ExcelFileExtension">
+            <summary>
+            .xlsx
+            </summary>
+        </member>
+        <member name="F:Utility.Files.TextFileExtension">
+            <summary>
+            .txt
+            </summary>
+        </member>
+        <member name="F:Utility.Files.XMLFileExtension">
+            <summary>
+            .xml
+            </summary>
+        </member>
+        <member name="F:Utility.Files.PNGFileExtension">
+            <summary>
+            .png
+            </summary>
+        </member>
+        <member name="F:Utility.Files.JPEGFileExtension">
+            <summary>
+            .jpg
+            </summary>
+        </member>
+        <member name="F:Utility.Files.BitmapFileExtension">
+            <summary>
+            .bmp
+            </summary>
+        </member>
+        <member name="F:Utility.Files.CSharpFileExtension">
+            <summary>
+            .cs
+            </summary>
+        </member>
+        <member name="F:Utility.Files.ImageFileExtensions">
+            <summary>
+            .jpg, .png, .bmp
+            </summary>
+        </member>
+        <member name="M:Utility.Files.FolderExists(System.String)">
+            <summary>
+            Indicates whether the specified folder exists.
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Utility.Files.DeleteFile(System.String,System.String)">
+            <summary>
+            Deletes the specified file, does not throw an exception if
+            the file does not exist.
+            </summary>
+            <param name="path"></param>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:Utility.Files.DeleteFile(System.String)">
+            <summary>
+            Deletes the specified file, does not throw an exception if
+            the file does not exist.
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Utility.Files.ContainsFile(System.String,System.String[])">
+            <summary>
+            Determines whether a file is in an array of files. Returns null if not there.
+            Returns the file path if it is.
+            </summary>
+            <param name="filename"></param>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Files.ForceFindFile(System.String)">
+            <summary>
+            This function will not fail at finding the file until it goes through every single file on the computer. It may take a while. Searches all drives.
+            
+            Returns null if no file found.
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Files.FindFile(System.String)">
+            <summary>
+            If the file is on the drive that we're searching, the file will be found. By default, we'll begin searching at the
+            startup location of the application. Use the method with the "path" argument if you have
+            an idea of where the file may be located. It will be faster.
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Files.FindFileOnDrive(System.String,System.Char)">
+            <summary>
+            Finds a file on the specified drive. If the file is on the drive, the file will be found. Use the method with the "path" argument if you have
+            an idea of where the file may be located. It will be faster.
+            </summary>
+            <param name="filename"></param>
+            <param name="drive">"C" or "D", etc</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Files.FindFile(System.String,System.String)">
+            <summary>
+            If the file is on the drive that we're searching, the file will be found.
+            </summary>
+            <param name="filename"></param>
+            <param name="path">The path where you believe the file may be located. If it's not in here, we'll search nearby.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Files.FindFile(System.String,System.String,System.Int32)">
+            <summary>
+            searches for a specified file
+            </summary>
+            <param name="filename">filename to search for (e.g. "ISD Logo.bmp")</param>
+            <param name="directoriesBeforeFail">the number of directories to search through
+            before we consider the file missing</param>
+            <returns>file path or null on error</returns>
+        </member>
+        <member name="M:Utility.Files.CreatePathIfNecessary(System.String)">
+            <summary>
+            Creates the given path if it does not exist.
+            
+            Goes through each folder from start to finish to determine
+            which folders do not yet exist.
+            </summary>
+            <param name="path">The path should NOT have a file name.</param>
+        </member>
+        <member name="M:Utility.Files.CreateFile(System.String,System.String)">
+            <summary>
+            Creates or overwrites the file at the specified directory.
+            </summary>
+            <param name="directory"></param>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:Utility.Files.FileExists(System.String,System.String)">
+            <summary>
+            Does the specified file exist in the specified directory?
+            Note that the specified directory MUST exist or an error will be thrown.
+            
+            directory should NOT end in "\\"
+            fileName should NOT start in "\\"
+            </summary>
+            <param name="directory"></param>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Files.FindFilesInFolder(System.String,System.IO.SearchOption)">
+            <summary>
+            
+            </summary>
+            <param name="folderPath">The path of the folder in which to search</param>
+            <param name="searchOption">Used to specify whether to go deeper than just the top-level directory.</param>
+            <returns>A list of the path for each file in a specified folder.</returns>
+        </member>
+        <member name="M:Utility.Files.ParseFileNameWithExtensionFromFullPath(System.String)">
+            <summary>
+            Given a full path (path and file name), parses the file name and returns it.
+            
+            Given path 
+            "C:\\Example\\test.txt"
+            will return "test.txt"
+            </summary>
+            <param name="fullPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Files.ParseFileNameWithoutExtensionFromFullPath(System.String)">
+            <summary>
+            Given path 
+            "C:\\Example\\test.txt"
+            will return "test"
+            </summary>
+            <param name="fullPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Files.ParseFileNameFromFileNameWithExtension(System.String)">
+            <summary>
+            Given "text.txt" will return "text"
+            </summary>
+            <param name="fileNameWithExtension"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Files.RemovePathsFromFullPathsList(System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            Given a list of fullPaths (path and filename)
+            converts it to a list of just the file names
+            </summary>
+            <param name="fullpaths"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.#ctor(System.String,System.Data.DataTable,System.Boolean)">
+            <summary>
+            Given a fullPath, creates the spreadsheet (first worksheet)
+            on which this ExcelSpreadsheetFactory will operate and populates it
+            with data from the given table.
+            
+            Formats the header row of the first worksheet.
+            
+            Uses the pathWithFilename as the name of the first worksheet (the tab name)
+            </summary>
+            <param name="pathWithFileName"></param>
+            <param name="table"></param>
+            <param name="printHeaders"></param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.#ctor(System.String,System.Data.DataTable,System.String,System.Boolean)">
+            <summary>
+            Given a fullPath, creates the spreadsheet (first worksheet)
+            on which this ExcelSpreadsheetFactory will operate and populates it
+            with data from the given table.
+            
+            Formats the header row of the first worksheet.
+            </summary>
+            <param name="pathWithFileName">a path (with a filename)</param>
+            <param name="worksheetName">The name of the first worksheet in the excel file (the tab name)</param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.#ctor(System.String)">
+            <summary>
+            Loads the data into this ExcelSpreadsheetFactory from the file
+            at the specified pathWithFileName
+            </summary>
+            <param name="pathWithFileName"></param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.LoadFromDataTable(System.Int32,System.Data.DataTable,System.Boolean)">
+            <summary>
+            Populates the specified worksheet with the given table.
+            
+            Formats the header row.
+            </summary>
+            <param name="table"></param>
+            <param name="printHeaders">If true, prints the column names on the first row</param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.FormatHeaderRows(System.Int32)">
+            <summary>
+            Formats the header row of the first worksheet.
+            Freezes the header row of the first worksheet.
+            </summary>
+            <param name="worksheetIndex"></param>
+            <param name="numberOfColumns"></param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.FormatHeaderRows(System.Int32,System.Int32)">
+            <summary>
+            Formats the header row of the specified worksheet.
+            Freezes the header row of the specified worksheet.
+            </summary>
+            <param name="numberOfColumns"></param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.FreezeHeaderRow">
+            <summary>
+            Freezes the top row of the first worksheet
+            </summary>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.FreezeHeaderRow(System.Int32)">
+            <summary>
+            Freezes the top row of the specified worksheet
+            </summary>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.Save">
+            <summary>
+            Saves the Excel Spreadsheet
+            </summary>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.AddColumn(System.String)">
+            <summary>
+            Adds a column to the end of this.Worksheet
+            and returns the index of that column.
+            </summary>
+            <param name="columnHeader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.GetIndexOfColumn(System.String)">
+            <summary>
+            Gets the index of the column in this.Worksheet
+            that has the specified name.
+            
+            Throws an exception if no column was found.
+            </summary>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.TryGetIndexOfColumn(System.String,System.Int32@)">
+            <summary>
+            Gets the index of the column in this.Worksheet
+            that has the specified name.
+            </summary>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.SetValuesInColumn(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Sets the values in the specified column of this.Worksheet
+            (does not set the column header)
+            
+            throws exception if column could not be found.
+            </summary>
+            <param name="values"></param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.SetValuesInColumn(System.Int32,System.Collections.Generic.List{System.String})">
+            <summary>
+            Sets the values in the specified column of this.Worksheet
+            (does not set the column header)
+            </summary>
+            <param name="values"></param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.GetNumberOfColumns">
+            <summary>
+            Gets the number of columns in this.Worksheet.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.IndexOfLastColumn">
+            <summary>
+            Gets the index of the last column in the this.Worksheet of this ExportSpreadsheetFactory
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.FormatSpreadsheet(System.Collections.Generic.List{Utility.Spreadsheets.Excel.ColumnFormatOptions})">
+            <summary>
+            Formats all of the columns in this excel spreadsheet
+            </summary>
+            <param name="columnFormatOptionsList">The columnFormatOptions for each
+            column in this spreadsheet's dataTable.</param>
+        </member>
+        <member name="M:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.FormatColumn(System.String,Utility.Spreadsheets.Excel.ColumnFormatOptions)">
+            <summary>
+            Formats the specified column with the given columnFormatOptions
+            </summary>
+            <param name="columnName"></param>
+            <param name="columnFormatOptions"></param>
+        </member>
+        <member name="P:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.Worksheet">
+            <summary>
+            The first Worksheet of the Excel file.
+            </summary>
+        </member>
+        <member name="P:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.DataTable">
+            <summary>
+            The DataTable that was used to populate the first Worksheet
+            </summary>
+        </member>
+        <member name="P:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.FirstRowIndex">
+            <summary>
+            The index of the first row.
+            </summary>
+        </member>
+        <member name="P:Utility.Spreadsheets.Excel.ExcelSpreadsheetFactory.FirstColumnIndex">
+            <summary>
+            The index of the first column.
+            </summary>
+        </member>
+        <member name="M:Utility.Strings.CompressString(System.String)">
+            <summary>
+            Compresses the string.
+            </summary>
+            <param name="text">The text.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Strings.DecompressString(System.String)">
+            <summary>
+            Decompresses the string.
+            </summary>
+            <param name="compressedText">The compressed text.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Strings.ParseFullNameIntoFirstAndLast(System.String)">
+            <summary>
+            Parses a full name such as "John Smith" into a first and last name such as "John", "Smith"
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Strings.IsAllNumbers(System.String)">
+            <summary>
+            Indicates whether all of the characters in the
+            given string are numbers.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Strings.IsNumber(System.Char)">
+            <summary>
+            Indicates whether a character is a number
+            </summary>
+            <param name="character"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Strings.ContainsNumber(System.String)">
+            <summary>
+            Indicates whether a string contains a number
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Strings.RemoveAllNonNumbers(System.String)">
+            <summary>
+            Removes all characters that are not numbers from this string
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Strings.RemoveLetters(System.String)">
+            <summary>
+            Removes all letters from a string.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Strings.ConvertIndexToExcelColumnName(System.Int32)">
+            <summary>
+            Converts 0 to A, 1 to B, 2 to C, 10 to K, 26 to AA, etc.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Strings.SplitByPascalCase(System.String)">
+            <summary>
+            Splits the given string (such as "MunicipalityChildRow") to
+            its individual pascal case words (such as "Municipality Child Row")
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Strings.UniqueStringGenerator._moveCharAtIndexUp(System.Char[],System.Int32)">
+            <summary>
+            Moves the specified character in our chars array up by 1. If the uptick
+            will set it over the max, sets the char back to the min value and goes
+            to the next char in the array and upticks that one, etc.
+            </summary>
+            <param name="chars"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Utility.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Utility.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Utility.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Utility.Exceptions.StaticClassExceptions.StaticClassNotInitialized">
+            <summary>
+            Used when a Static class has not yet been initialized.
+            </summary>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.GetNumberPlacesLeftAndRightOfDecimal(System.Double)">
+            <summary>
+            Gets the number of decimal places to the left (Item1) and to the right (Item2)
+            of the decimal place.
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.GetLeftAndRightOfDecimal(System.Double)">
+            <summary>
+            Gets the values to the left and to the right of the decimal in the given double.
+            Returns these values as strings.
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.RoundToWholeNumberAwayFromZero(System.Double)">
+            <summary>
+            Rounds to the whole number farthest from zero. If -3.4, rounds to -4. if 8.2, rounds to 9.
+            </summary>
+            <param name="unrounded"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.RoundToRepeatingNumber(System.Double,System.Int32)">
+            <summary>
+            Looks for a repeating number series in a larger number. If a repeating
+            number series is found of the correct length (seriesLength), all numbers
+            after that series will be changed to the number in the series. For example,
+            if the number is "28.4733382" and our seriesLength was 3 then this would
+            output a number "28.4733333". If no repeating number series is found,
+            the function returns the original number.
+            </summary>
+            <param name="unrounded"></param>
+            <param name="seriesLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.RoundSeriesOfNinesOrZeros(System.Double,System.Int32)">
+            <summary>
+            Rounds a number if it contains a series of 9's or 0's. Rounds it to the decimal place
+            that marks the beginning of the series of 9's or 0's. For instance, if we have 
+            the number "10.837999" for example, we may want this rounded to "10.838" To do this, 
+            call the function and set the "seriesLength" to 3 (i.e. "999"). We could also set the
+            series length to 2 (i.e. "99"). The number will then be rounded.
+            
+            This also works for series of 0's. For instance, "261.2004" would be rounded down
+            to "261.2" if we called this function with a seriesLength of 2.
+            </summary>
+            <param name="unrounded">The number to potentially round.</param>
+            <param name="seriesLength">The length of the series that we will check for. The series
+            is the row of 9's or 0's. (e.g. "000" or "999" or "99", etc)</param>
+            <returns>Rounded number if there is a series of 0's or 9's that meets the seriesLength length. If
+            not, returns the unrounded number.</returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.RoundIfWithinMargin(System.Double,System.Double)">
+            <summary>
+            Takes an unrounded number and if its distance to its nearest whole number is less than
+            the margin, it returns the rounded number. If not, it returns the unrounded number.
+            For example, perhaps margin is .0001, So if toRound is 14.9999 or more, we round.
+            If toRound is 15.0001 or less, we round. If not, we just return toRound.
+            </summary>
+            <param name="unrounded"></param>
+            <param name="margin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.RoundDown(System.Double)">
+            <summary>
+            Rounds to next lowest whole number
+            </summary>
+            <param name="valueToRound"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.RoundUp(System.Double)">
+            <summary>
+            Rounds to next highest whole number
+            </summary>
+            <param name="valueToRound"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.ValidateNotNull(System.Object,System.String)">
+            <summary>
+            Validates that a value is not <c>null</c>.
+            </summary>
+            <param name="value">
+            The value to validate
+            </param>
+            <param name="name">
+            The name of the argument
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            If <c>value</c> is <c>null</c>
+            </exception>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.ValidateEnum(System.Type,System.Object,System.String)">
+            <summary>
+            Validates that an enum instance is defined
+            </summary>
+            <param name="value">
+            The value to validate
+            </param>
+            <param name="enumType">
+            Type of the enum
+            </param>
+            <param name="name">
+            The name of the enum object
+            </param>
+            <exception cref="T:System.ArgumentException">
+            If value is not defined
+            </exception>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.ValidateNotNegative(System.Double,System.String)">
+            <summary>
+            Validates that a numerical argument is not negative
+            </summary>
+            <param name="value">
+            The numerical value to validate
+            </param>
+            <param name="name">
+            The name of the argument
+            </param>
+            <exception cref="T:System.ArgumentException">
+            If the value is negative
+            </exception>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.ValidatePositive(System.Double,System.String)">
+            <summary>
+            Validates that a numerical argument is positive
+            </summary>
+            <param name="value">
+            The numerical value to validate
+            </param>
+            <param name="name">
+            The name of the argument
+            </param>
+            <exception cref="T:System.ArgumentException">
+            If value is zero or negative
+            </exception>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.ValidateWithinRange(System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            Validates that a numerical argument is within the given range
+            </summary>
+            <param name="value">
+            The value to validate
+            </param>
+            <param name="min">
+            Minimum acceptable value
+            </param>
+            <param name="max">
+            Maximum acceptable value
+            </param>
+            <param name="name">
+            The name of the argument
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            If the <c>value</c> does not lie within the specified range
+            </exception>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.GetRandom">
+            <summary>
+            Random Generator. Returns a random double between 0 and 1
+            </summary>
+            <returns>
+            A random double between 0 and 1
+            </returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.GetRandom(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="min">inclusive</param>
+            <param name="max">exclusive</param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.GetRandomExcluding(System.Int32,System.Int32,System.Int32[])">
+            <summary>
+            Gets a random number between min and max. Does not get any of the numbers in the exclusions array.
+            </summary>
+            <param name="min">inclusive</param>
+            <param name="max">exclusive</param>
+            <param name="exclusions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.GetRandom(System.Random,System.Double,System.Double)">
+            <summary>
+            Random Generator. Returns a random double between specified minimum and maximum values
+            </summary>
+            <returns>
+            A random double between <c>min</c> and <c>max</c>
+            </returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.GetRandomOrder(System.Int32)">
+            <summary>
+            Generates an array of given size containing integers from 0 to 'size - 1' in random order
+            </summary>
+            <param name="size">
+            Size of the array to generate.
+            </param>
+            <returns>
+            The generated array.
+            </returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.Normalize(System.Double[])">
+            <summary>
+            Normalizes a vector of doubles. The normalized vector of X is a vector in the same direction but with magnitude (length) 1
+            </summary>
+            <param name="vector">
+            The vector to normalize. This array is not modified by the function.
+            </param>
+            <returns>
+            The normalized output
+            </returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.Normalize(System.Double[],System.Double)">
+            <summary>
+            Normalizes a vector of doubles.  The normalized vector of X is a vector in the same direction but with magnitude (length) 1
+            </summary>
+            <param name="vector">
+            The vector to normalize. This array is not modified by the function.
+            </param>
+            <param name="magnitude">
+            Magnitude
+            </param>
+            <returns>
+            The normalized output
+            </returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.GetRandomVector(System.Int32,System.Double)">
+            <summary>
+            Helper to obtain random normal values
+            </summary>
+            <param name="count">
+            Number of values to get
+            </param>
+            <param name="magnitude">
+            Magnitude of the vector
+            </param>
+            <returns>
+            An array containing specified number of normalized random doubles
+            </returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.GetDistance(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Uses the distance formula to calculate the distance between two points
+            </summary>
+            <param name="point1"></param>
+            <param name="point2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.GetDistance(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Uses the distance formula to calculate the distance between two points
+            </summary>
+            <param name="point1"></param>
+            <param name="point2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.ReseedUtilityRandomGenerator">
+            <summary>
+            Reseeds Utility.MathFunctions.Random
+            </summary>
+        </member>
+        <member name="M:Utility.Math.MathFunctions.ReseedRandomGenerator(System.Random,System.Object)">
+            <summary>
+            Reseeds a Random Generator. 
+            
+            The Random Generator returns results based on time. So if you're running a loop that requires random numbers in quick succession, the numbers may not be random since
+            they're based on time and time is not passing quickly enough.
+            Therefore, the random number generator needs to be reseeded.
+            
+            </summary>
+            <param name="randomGenerator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Converter.ConvertToStandardType``2(``0)">
+            <summary>
+            Only use this if converting from a standard type (int, Byte, string, etc) to a standard type.
+            </summary>
+            <typeparam name="SrcType"></typeparam>
+            <typeparam name="DestType"></typeparam>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Converter.ConvertType``2(``0)">
+            <summary>
+            Uses reflection to convert an object to a destination type, e.g. transfers all the properties and members they have in common. Only use
+            this if converting between a user-defined source or user-defined destination.
+            </summary>
+        </member>
+        <member name="M:Utility.Converter.ConvertToUserType``2(``0,``1)">
+            <summary>
+            Uses reflection to convert an object to a destination type, e.g. transfers all the properties and members they have in common. Only use
+            this if converting between a user-defined source or user-defined destination.
+            </summary>
+            <typeparam name="SrcType">Source Type</typeparam>
+            <typeparam name="DestType">Destination Type</typeparam>
+            <param name="source">Object to convert</param>
+            <param name="destination">Destination object or null if it should be created</param>
+            <returns>An object where as many properties and fields as possible have been transferred from Source.</returns>
+        </member>
+        <member name="M:Utility.Converter.ConvertToInt(System.String,System.Int32@)">
+            <summary>
+            Converts a string to an int and raises a MessageBox error if the conversion could not take place.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.Converter.ConvertStringToObjectOfType(System.String,System.Type)">
+            <summary>
+            Converts a specified string to an object of the passed type
+            
+            Assumes that the conversion can be completed (i.e. doesn't try to convert--just converts).
+            This means that exceptions may occur if the string cannot be converted.
+            </summary>
+            <param name="str"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Utility.SpellChecker">
+            <summary>
+            http://www.maierhofer.de/en/open-source/nhunspell-net-spell-checker.aspx
+            http://wiki.services.openoffice.org/wiki/Dictionaries#English_.28AU.2CCA.2CGB.2CNZ.2CUS.2CZA.29
+            
+            http://www.ehow.com/how_5892662_create-open-office-dictionary.html
+             </summary>
+        </member>
+        <member name="M:Utility.SpellChecker.GetSpellerInstance">
+            <summary>
+            Because Hunspell uses unmanaged memory,
+            we have to use the IDispose pattern
+            
+            See http://wiki.services.openoffice.org/wiki/Dictionaries
+            for getting other dictionaries
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Utility.SpellChecker.GetSuggestion(System.String)">
+            <summary>
+            Retrieves the top spelling suggestion for a word
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

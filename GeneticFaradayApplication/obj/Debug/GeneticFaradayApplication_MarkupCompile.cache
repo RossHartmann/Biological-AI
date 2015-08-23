@@ -1,0 +1,20 @@
+﻿GeneticFaradayApplication
+
+
+winexe
+C#
+.cs
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaradayApplication\obj\Debug\
+GeneticFaradayApplication
+none
+false
+DEBUG;TRACE
+H:\documents\Visual Studios Projects\GeneticFaraday\GeneticFaradayApplication\App.xaml
+16618880052
+
+136-1397850326
+17642165811
+MainWindow.xaml;Views\Views\Environments\EnvironmentEditorView.xaml;Views\Views\GeneticCodes\CodonConverters\CodonConvertersView.xaml;Views\Views\GeneticCodes\Codons\CodonEditorView.xaml;Views\Views\GeneticCodes\Codons\CodonsCreatorView.xaml;Views\Views\GeneticCodes\Codons\CodonsView.xaml;Views\Views\GeneticCodes\Functions\FunctionsView.xaml;Views\Views\GeneticCodes\Functions\FunctionWeightView.xaml;Views\Views\GeneticCodes\GeneticCodeBasicInfoView.xaml;Views\Views\GeneticCodes\GeneticCodeCreatorView.xaml;Views\Views\GeneticCodes\GeneticCodeEditorView.xaml;Views\Views\GeneticCodes\GeneticCodeSelectorView.xaml;Views\Views\GeneticCodes\Nucleotides\NucleotideEditorView.xaml;Views\Views\GeneticCodes\Nucleotides\NucleotidesView.xaml;Views\Views\Universes\EnvironmentSummaryView.xaml;Views\Views\Universes\UniverseEditorView.xaml;
+
+True
+

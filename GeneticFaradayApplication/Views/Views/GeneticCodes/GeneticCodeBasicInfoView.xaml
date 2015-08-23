@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="GeneticFaradayApplication.Views.Views.GeneticCodes.GeneticCodeBasicInfoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="407" Width="201">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" x:Name="codon_length_text_box"  Height="23" Margin="0,76,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="199" ToolTip="The length of every Codon in the Genetic Code. All Codons must be of this length."/>
+        <Label Content="Codon Length" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.423">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="7" Opacity="0.9"/>
+            </Label.Effect>
+        </Label>
+        <TextBox HorizontalAlignment="Left" x:Name="max_parameterful_functions_in_dna_text_box"  Height="23" Margin="0,125,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="199" ToolTip="The maximum number of Functions that take parameters that can be used in an Allele's IDNA. After (or before) this number of Functions (with parameters) have been called, the rest of the Functions in the IDNA will not accept any parameters (i.e. they  will be terminals)."/>
+        <Label Content="Max Parameterful Functions In DNA" HorizontalAlignment="Left" Margin="0,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.423">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="7" Opacity="0.9"/>
+            </Label.Effect>
+        </Label>
+        <TextBox HorizontalAlignment="Left" x:Name="max_recursion_level_text_box"  Height="23" Margin="0,175,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="199" ToolTip="The maximum recursion level that's allowable. If this value is reached by an IGEPGene, the execution of the IGEPGene will be aborted."/>
+        <Label Content="Max Recursion Level" HorizontalAlignment="Left" Margin="0,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.423">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="7" Opacity="0.9"/>
+            </Label.Effect>
+        </Label>
+        <GroupBox Header="DNA" HorizontalAlignment="Left" Margin="0,203,0,-105" VerticalAlignment="Top" Height="202" Width="199">
+            <GroupBox.Effect>
+                <DropShadowEffect BlurRadius="8" Opacity="0.5"/>
+            </GroupBox.Effect>
+        </GroupBox>
+        <TextBox HorizontalAlignment="Left" x:Name="dna_tail_length_text_box" Height="23" Margin="11,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" ToolTip="The Length of the tail of a sequence of IDNA as measured in INucleotides. The tail can only use IFunctions without Parameters." IsEnabled="False"/>
+        <Label Content="Tail Length" HorizontalAlignment="Left" Margin="11,221,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.423">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="7" Opacity="0.9"/>
+            </Label.Effect>
+        </Label>
+        <TextBox HorizontalAlignment="Left" x:Name="dna_head_length_text_box" Height="23" Margin="11,306,0,-29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" ToolTip="The Length of the head of a sequence of IDNA as measured in INucleotides. The head can use IFunctions with or without Parameters." IsEnabled="False"/>
+        <Label Content="Head Length" HorizontalAlignment="Left" Margin="11,275,0,-1" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.423">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="7" Opacity="0.9"/>
+            </Label.Effect>
+        </Label>
+        <TextBox HorizontalAlignment="Left" x:Name="dna_total_length_text_box" Height="23" Margin="11,360,0,-83" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" ToolTip="The length of all IDNA." IsEnabled="False"/>
+        <Label Content="Total Length" HorizontalAlignment="Left" Margin="11,329,0,-55" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.423">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="7" Opacity="0.9"/>
+            </Label.Effect>
+        </Label>
+        <TextBox HorizontalAlignment="Left" x:Name="genetic_code_name_text_box"  Height="23" Margin="0,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="199" ToolTip="The unique name of the Genetic Code."/>
+        <Label Content="Genetic Code Name" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.423">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="7" Opacity="0.9"/>
+            </Label.Effect>
+        </Label>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7E65D0F-C002-4AD0-BB79-E397C59105C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneticFaradayApplication</RootNamespace>
+    <AssemblyName>GeneticFaradayApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UtilityData">
+      <HintPath>..\..\UtilityData\UtilityData\bin\Debug\UtilityData.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Models\AbstractModels\Environments\EnvironmentEditorModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\CodonConverters\CodonConvertersModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\Codons\CodonEditorModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\Codons\CodonsCreatorModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\Codons\CodonsModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\Functions\FunctionBaseIdentifierBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\Functions\FunctionsModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\Functions\FunctionWeightModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\GeneticCodeCreatorModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\GeneticCodeEditorModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\GeneticCodeSelectorModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\Nucleotides\NucleotideEditorModelBase.cs" />
+    <Compile Include="Models\AbstractModels\GeneticCodes\Nucleotides\NucleotidesModelBase.cs" />
+    <Compile Include="Models\AbstractModels\Universes\EnvironmentSummaryModelBase.cs" />
+    <Compile Include="Models\AbstractModels\Universes\UniverseEditorModelBase.cs" />
+    <Compile Include="Models\Contracts\Environments\IEnvironmentEditorModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\CodonConverters\ICodonConvertersModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\Codons\ICodonEditorModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\Codons\ICodonsCreatorModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\Codons\ICodonsModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\Functions\IFunctionBaseIdentifier.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\Functions\IFunctionsModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\Functions\IFunctionWeightModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\IGeneticCodeCreatorModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\IGeneticCodeEditorModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\IGeneticCodeSelectorModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\Nucleotides\INucleotideEditorModel.cs" />
+    <Compile Include="Models\Contracts\GeneticCodes\Nucleotides\INucleotidesModel.cs" />
+    <Compile Include="Models\Contracts\Universes\IEnvironmentSummaryModel.cs" />
+    <Compile Include="Models\Contracts\Universes\IUniverseEditorModel.cs" />
+    <Compile Include="Models\Models\Environments\EnvironmentEditorModel.cs" />
+    <Compile Include="Models\Models\GeneticCodes\CodonConverters\CodonConvertersModel.cs" />
+    <Compile Include="Models\Models\GeneticCodes\Codons\CodonEditorModel.cs" />
+    <Compile Include="Models\Models\GeneticCodes\Codons\CodonsCreatorModel.cs" />
+    <Compile Include="Models\Models\GeneticCodes\Codons\CodonsModel.cs" />
+    <Compile Include="Models\Models\GeneticCodes\Functions\FunctionBaseIdentifier.cs" />
+    <Compile Include="Models\Models\GeneticCodes\Functions\FunctionsModel.cs" />
+    <Compile Include="Models\Models\GeneticCodes\Functions\FunctionWeightModel.cs" />
+    <Compile Include="Models\Models\GeneticCodes\GeneticCodeCreatorModel.cs" />
+    <Compile Include="Models\Models\GeneticCodes\GeneticCodeSelectorModel.cs" />
+    <Compile Include="Models\Models\GeneticCodes\Nucleotides\NucleotideEditorModel.cs" />
+    <Compile Include="Models\Models\GeneticCodes\Nucleotides\NucleotidesModel.cs" />
+    <Compile Include="Models\Models\Universes\EnvironmentSummaryModel.cs" />
+    <Compile Include="Models\Models\Universes\UniverseEditorModel.cs" />
+    <Compile Include="Presenters\AbstractPresenters\Environments\EnvironmentEditorPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\CodonConverters\CodonConvertersPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\Codons\CodonEditorPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\Codons\CodonsCreatorPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\Codons\CodonsPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\Functions\FunctionsPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\Functions\FunctionWeightPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\GeneticCodeCreatorPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\GeneticCodeSelectorPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\Nucleotides\NucleotideEditorPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\Nucleotides\NucleotidesPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\PresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\Universes\EnvironmentSummaryPresenterBase.cs" />
+    <Compile Include="Presenters\AbstractPresenters\Universes\UniverseEditorPresenterBase.cs" />
+    <Compile Include="Presenters\Contracts\Environments\IEnvironmentEditorPresenter.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\CodonConverters\ICodonConvertersPresenter.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\Codons\ICodonEditorPresenter.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\Codons\ICodonsCreatorPresenter.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\Codons\ICodonsPresenter.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\Functions\IFunctionsPresenter.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\Functions\IFunctionWeightPresenter.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\IGeneticCodeCreatorPresenter.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\IGeneticCodeSelectorPresenter.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\Nucleotides\INucleotideEditorPresenter.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\Nucleotides\INucleotidesPresenter.cs" />
+    <Compile Include="Presenters\Contracts\Universes\IEnvironmentSummaryPresenter.cs" />
+    <Compile Include="Presenters\Contracts\Universes\IUniverseEditorPresenter.cs" />
+    <Compile Include="Presenters\Presenters\Environments\EnvironmentEditorPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\CodonConverters\CodonConvertersPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\Codons\CodonEditorPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\Codons\CodonsCreatorPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\Codons\CodonsPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\Functions\FunctionsPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\Functions\FunctionWeightPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\GeneticCodeCreatorPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\GeneticCodeSelectorPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\Nucleotides\NucleotideEditorPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\Nucleotides\NucleotidesPresenter.cs" />
+    <Compile Include="Presenters\Presenters\Universes\EnvironmentSummaryPresenter.cs" />
+    <Compile Include="Presenters\Presenters\Universes\UniverseEditorPresenter.cs" />
+    <Compile Include="Repositories\AbstractRepositories\RepositoryArgsBase.cs" />
+    <Compile Include="Repositories\AbstractRepositories\RepositoryEventArgsBase.cs" />
+    <Compile Include="Repositories\Contracts\IRepository.cs" />
+    <Compile Include="Repositories\Contracts\IRepositoryArgs.cs" />
+    <Compile Include="Repositories\Contracts\IRepositoryEventArgs.cs" />
+    <Compile Include="Repositories\Contracts\RepositoryType.cs" />
+    <Compile Include="Models\Models\GeneticCodes\GeneticCodeEditorModel.cs" />
+    <Compile Include="Presenters\AbstractPresenters\GeneticCodes\GeneticCodeEditorPresenterBase.cs" />
+    <Compile Include="Presenters\Contracts\GeneticCodes\IGeneticCodeEditorPresenter.cs" />
+    <Compile Include="Presenters\Presenters\GeneticCodes\GeneticCodeEditorPresenter.cs" />
+    <Compile Include="Repositories\Repositories\RepositoryArgs.cs" />
+    <Compile Include="Repositories\Repositories\RepositoryEventArgs.cs" />
+    <Compile Include="SessionManager.cs" />
+    <Compile Include="Utilities\EventArgsWithModel.cs" />
+    <Compile Include="Views\Contracts\Environments\IEnvironmentEditorView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\CodonConverters\ICodonConvertersView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\Codons\ICodonEditorView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\Codons\ICodonsCreatorView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\Codons\ICodonsView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\Functions\IFunctionsView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\Functions\IFunctionWeightView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\IBasicGeneticCodeInfoView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\IGeneticCodeCreatorView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\IGeneticCodeSelectorView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\Nucleotides\INucleotidesView.cs" />
+    <Compile Include="Views\Contracts\GeneticCodes\Nucleotides\INucleotideEditorView.cs" />
+    <Compile Include="Views\Contracts\Universes\IEnvironmentSummaryView.cs" />
+    <Compile Include="Views\Contracts\Universes\IUniverseEditorView.cs" />
+    <Compile Include="Views\Views\Environments\EnvironmentEditorView.xaml.cs">
+      <DependentUpon>EnvironmentEditorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\CodonConverters\CodonConvertersView.xaml.cs">
+      <DependentUpon>CodonConvertersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\Codons\CodonEditorView.xaml.cs">
+      <DependentUpon>CodonEditorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\Codons\CodonsCreatorView.xaml.cs">
+      <DependentUpon>CodonsCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\Codons\CodonsView.xaml.cs">
+      <DependentUpon>CodonsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\Functions\FunctionsView.xaml.cs">
+      <DependentUpon>FunctionsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\Functions\FunctionWeightView.xaml.cs">
+      <DependentUpon>FunctionWeightView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\GeneticCodeBasicInfoView.xaml.cs">
+      <DependentUpon>GeneticCodeBasicInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\GeneticCodeCreatorView.xaml.cs">
+      <DependentUpon>GeneticCodeCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\GeneticCodeEditorView.xaml.cs">
+      <DependentUpon>GeneticCodeEditorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contracts\GeneticCodes\IGeneticCodeEditorView.cs" />
+    <Compile Include="Views\Contracts\IView.cs" />
+    <Compile Include="Views\Views\GeneticCodes\GeneticCodeSelectorView.xaml.cs">
+      <DependentUpon>GeneticCodeSelectorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\Nucleotides\NucleotideEditorView.xaml.cs">
+      <DependentUpon>NucleotideEditorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\GeneticCodes\Nucleotides\NucleotidesView.xaml.cs">
+      <DependentUpon>NucleotidesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\Universes\EnvironmentSummaryView.xaml.cs">
+      <DependentUpon>EnvironmentSummaryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Views\Universes\UniverseEditorView.xaml.cs">
+      <DependentUpon>UniverseEditorView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\Views\Environments\EnvironmentEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\CodonConverters\CodonConvertersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\Codons\CodonEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\Codons\CodonsCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\Codons\CodonsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\Functions\FunctionsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\Functions\FunctionWeightView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\GeneticCodeBasicInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\GeneticCodeCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\GeneticCodeEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\GeneticCodeSelectorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\Nucleotides\NucleotideEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\GeneticCodes\Nucleotides\NucleotidesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\Universes\EnvironmentSummaryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Views\Universes\UniverseEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Contracts\IModel.cs" />
+    <Compile Include="Presenters\Contracts\IPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\AbstractViews\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeneticFaraday\GeneticFaraday.csproj">
+      <Project>{619ee58e-d2de-487c-8318-b20a4cd00301}</Project>
+      <Name>GeneticFaraday</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

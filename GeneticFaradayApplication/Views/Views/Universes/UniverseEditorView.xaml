@@ -1,0 +1,10 @@
+﻿<Window x:Class="GeneticFaradayApplication.Views.Views.Universes.UniverseEditorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UniverseEditor" Height="486.62" Width="717">
+    <Grid>
+        <TabControl x:Name="tab_control" Height="404" VerticalAlignment="Top"/>
+        <Button Content="Add Environment" x:Name="add_environment_button" HorizontalAlignment="Left" Margin="10,417,0,0" VerticalAlignment="Top" Width="133" Click="add_environment_button_Click_1"/>
+
+    </Grid>
+</Window>
